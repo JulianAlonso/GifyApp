@@ -15,6 +15,7 @@
 		0124EB5B1AAE51FD00F90717 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0124EB5A1AAE51FD00F90717 /* Images.xcassets */; };
 		0124EB5E1AAE51FD00F90717 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0124EB5C1AAE51FD00F90717 /* LaunchScreen.xib */; };
 		0124EB6A1AAE51FD00F90717 /* GifyAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0124EB691AAE51FD00F90717 /* GifyAppTests.m */; };
+		0124EB751AAE528200F90717 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0124EB741AAE528200F90717 /* CoreDataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		0124EB631AAE51FD00F90717 /* GifyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0124EB681AAE51FD00F90717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0124EB691AAE51FD00F90717 /* GifyAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifyAppTests.m; sourceTree = "<group>"; };
+		0124EB731AAE528200F90717 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		0124EB741AAE528200F90717 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				0124EB4F1AAE51FD00F90717 /* AppDelegate.m */,
 				0124EB541AAE51FD00F90717 /* ViewController.h */,
 				0124EB551AAE51FD00F90717 /* ViewController.m */,
+				0124EB731AAE528200F90717 /* CoreDataStack.h */,
+				0124EB741AAE528200F90717 /* CoreDataStack.m */,
 				0124EB571AAE51FD00F90717 /* Main.storyboard */,
 				0124EB5A1AAE51FD00F90717 /* Images.xcassets */,
 				0124EB5C1AAE51FD00F90717 /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0124EB751AAE528200F90717 /* CoreDataStack.m in Sources */,
 				0124EB531AAE51FD00F90717 /* GifyApp.xcdatamodeld in Sources */,
 				0124EB501AAE51FD00F90717 /* AppDelegate.m in Sources */,
 				0124EB561AAE51FD00F90717 /* ViewController.m in Sources */,
