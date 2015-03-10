@@ -7,6 +7,8 @@
 //
 
 #import "SearchViewController.h"
+#import "SearchGifInteractor.h"
+#import "DefaultSearchViewDelegate.h"
 
 @interface SearchViewController ()
 
@@ -19,6 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    SearchGifInteractor *SGI = [[SearchGifInteractor alloc] init];
+    
+    [SGI searchGifWithWords:@[@"cat"] completionBlock:^(NSArray *gifs) {
+        
+    }];
     
     [self configureProperties];
 }
@@ -33,8 +41,17 @@
 {
     self.searchTableView.delegate = self.delegate;
     self.searchTableView.dataSource = self.delegate;
-    
     self.searchBar.delegate = self.delegate;
+}
+
+#pragma mark - Lazy getters.
+- (id<SearchViewDelegate>)delegate
+{
+    if (!_delegate)
+    {
+        _delegate = [[DefaultSearchViewDelegate alloc] init];
+    }
+    return _delegate;
 }
 
 @end

@@ -7,8 +7,8 @@
 //
 
 #import "GifParser.h"
-#import "Gify.h"
 #import "PathHelper.h"
+#import "GifyDTO.h"
 
 @implementation GifParser
 
@@ -17,7 +17,7 @@
     NSMutableArray *gifs = [NSMutableArray array];
     for (NSDictionary *gifData in gifsData)
     {
-        Gify *gify = [[Gify alloc] init];
+        GifyDTO *gify = [[GifyDTO alloc] init];
         
         gify.url = [gifData valueForKeyPath: @"images.original.url"];
         gify.width = [gifData valueForKeyPath: @"images.original.width"];

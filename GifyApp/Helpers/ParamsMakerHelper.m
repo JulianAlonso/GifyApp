@@ -36,7 +36,7 @@
         }
         else
         {
-            [param appendFormat:@"+%@", param];
+            [params appendFormat:@"+%@", param];
         }
     }
     return params;

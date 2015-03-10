@@ -19,11 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    SearchGifInteractor *SGI = [[SearchGifInteractor alloc] init];
-    
-    [SGI searchGifWithWords:@[@"cat"] completionBlock:^(NSArray *gifs) {
-        
-    }];
+   
 }
 
 - (void)didReceiveMemoryWarning {

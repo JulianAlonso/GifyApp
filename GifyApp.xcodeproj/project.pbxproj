@@ -15,6 +15,8 @@
 		010FF4131AAF68500050616B /* PathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 010FF4121AAF68500050616B /* PathHelper.m */; };
 		010FF4191AAF6A660050616B /* Gify.m in Sources */ = {isa = PBXBuildFile; fileRef = 010FF4181AAF6A660050616B /* Gify.m */; };
 		010FF4201AAF6C280050616B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010FF41F1AAF6C280050616B /* SearchViewController.m */; };
+		010FF4251AAF6FB90050616B /* DefaultSearchViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 010FF4241AAF6FB90050616B /* DefaultSearchViewDelegate.m */; };
+		010FF4281AAF79010050616B /* GifyDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 010FF4271AAF79010050616B /* GifyDTO.m */; };
 		0124EB4D1AAE51FD00F90717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0124EB4C1AAE51FD00F90717 /* main.m */; };
 		0124EB501AAE51FD00F90717 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0124EB4F1AAE51FD00F90717 /* AppDelegate.m */; };
 		0124EB531AAE51FD00F90717 /* GifyApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0124EB511AAE51FD00F90717 /* GifyApp.xcdatamodeld */; };
@@ -56,6 +58,10 @@
 		010FF41E1AAF6C280050616B /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchViewController.h; path = ViewControllers/SearchViewController.h; sourceTree = "<group>"; };
 		010FF41F1AAF6C280050616B /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchViewController.m; path = ViewControllers/SearchViewController.m; sourceTree = "<group>"; };
 		010FF4221AAF6DD20050616B /* SearchViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchViewDelegate.h; path = Delegates/SearchViewDelegate.h; sourceTree = "<group>"; };
+		010FF4231AAF6FB90050616B /* DefaultSearchViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefaultSearchViewDelegate.h; path = Delegates/DefaultSearchViewDelegate.h; sourceTree = "<group>"; };
+		010FF4241AAF6FB90050616B /* DefaultSearchViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefaultSearchViewDelegate.m; path = Delegates/DefaultSearchViewDelegate.m; sourceTree = "<group>"; };
+		010FF4261AAF79010050616B /* GifyDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GifyDTO.h; path = Models/GifyDTO.h; sourceTree = "<group>"; };
+		010FF4271AAF79010050616B /* GifyDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GifyDTO.m; path = Models/GifyDTO.m; sourceTree = "<group>"; };
 		0124EB471AAE51FD00F90717 /* GifyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0124EB4B1AAE51FD00F90717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0124EB4C1AAE51FD00F90717 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,6 +142,8 @@
 			children = (
 				010FF4171AAF6A660050616B /* Gify.h */,
 				010FF4181AAF6A660050616B /* Gify.m */,
+				010FF4261AAF79010050616B /* GifyDTO.h */,
+				010FF4271AAF79010050616B /* GifyDTO.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -153,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				010FF4221AAF6DD20050616B /* SearchViewDelegate.h */,
+				010FF4231AAF6FB90050616B /* DefaultSearchViewDelegate.h */,
+				010FF4241AAF6FB90050616B /* DefaultSearchViewDelegate.m */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -385,11 +395,13 @@
 			files = (
 				0124EB751AAE528200F90717 /* CoreDataStack.m in Sources */,
 				010FF40C1AAF61E60050616B /* GifParser.m in Sources */,
+				010FF4281AAF79010050616B /* GifyDTO.m in Sources */,
 				010FF4021AAF45980050616B /* URLMakerHelper.m in Sources */,
 				0197F1A51AAF1C27002DD5C8 /* SearchGifInteractor.m in Sources */,
 				010FF3FE1AAF44510050616B /* GifAPIClientRequestManager.m in Sources */,
 				0124EB531AAE51FD00F90717 /* GifyApp.xcdatamodeld in Sources */,
 				0124EB501AAE51FD00F90717 /* AppDelegate.m in Sources */,
+				010FF4251AAF6FB90050616B /* DefaultSearchViewDelegate.m in Sources */,
 				010FF4201AAF6C280050616B /* SearchViewController.m in Sources */,
 				0124EB561AAE51FD00F90717 /* ViewController.m in Sources */,
 				010FF4191AAF6A660050616B /* Gify.m in Sources */,
