@@ -16,6 +16,10 @@
 		0124EB5E1AAE51FD00F90717 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0124EB5C1AAE51FD00F90717 /* LaunchScreen.xib */; };
 		0124EB6A1AAE51FD00F90717 /* GifyAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0124EB691AAE51FD00F90717 /* GifyAppTests.m */; };
 		0124EB751AAE528200F90717 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0124EB741AAE528200F90717 /* CoreDataStack.m */; };
+		0197F1A51AAF1C27002DD5C8 /* SearchGifInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0197F1A41AAF1C27002DD5C8 /* SearchGifInteractor.m */; };
+		0197F1A81AAF1C4A002DD5C8 /* SearchGifInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0197F1A71AAF1C4A002DD5C8 /* SearchGifInteractorTests.m */; };
+		0197F1AC1AAF1E13002DD5C8 /* GifProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0197F1AB1AAF1E13002DD5C8 /* GifProvider.m */; };
+		A5816B7D206D90478A35590D /* libPods-GifyAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6381E31BC8B74E11D0785A9A /* libPods-GifyAppTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,15 @@
 		0124EB691AAE51FD00F90717 /* GifyAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifyAppTests.m; sourceTree = "<group>"; };
 		0124EB731AAE528200F90717 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
 		0124EB741AAE528200F90717 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		016DE86D1AAF32880008F00C /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
+		0197F1A31AAF1C27002DD5C8 /* SearchGifInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchGifInteractor.h; path = Interactors/SearchGifInteractor.h; sourceTree = "<group>"; };
+		0197F1A41AAF1C27002DD5C8 /* SearchGifInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchGifInteractor.m; path = Interactors/SearchGifInteractor.m; sourceTree = "<group>"; };
+		0197F1A71AAF1C4A002DD5C8 /* SearchGifInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchGifInteractorTests.m; path = Interactors/SearchGifInteractorTests.m; sourceTree = "<group>"; };
+		0197F1AA1AAF1E13002DD5C8 /* GifProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GifProvider.h; path = Providers/GifProvider.h; sourceTree = "<group>"; };
+		0197F1AB1AAF1E13002DD5C8 /* GifProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GifProvider.m; path = Providers/GifProvider.m; sourceTree = "<group>"; };
+		6381E31BC8B74E11D0785A9A /* libPods-GifyAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GifyAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D6838DE4C8C4045234515F /* Pods-GifyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifyAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GifyAppTests/Pods-GifyAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE25FBC2A2AD8D2A61DEE3B0 /* Pods-GifyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifyAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GifyAppTests/Pods-GifyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5816B7D206D90478A35590D /* libPods-GifyAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +85,8 @@
 				0124EB491AAE51FD00F90717 /* GifyApp */,
 				0124EB661AAE51FD00F90717 /* GifyAppTests */,
 				0124EB481AAE51FD00F90717 /* Products */,
+				2D057F07888FCB3CF97040FB /* Pods */,
+				52687E4D33F392963DBAFCF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +102,9 @@
 		0124EB491AAE51FD00F90717 /* GifyApp */ = {
 			isa = PBXGroup;
 			children = (
+				0197F1A91AAF1D73002DD5C8 /* Provider */,
+				0197F1A21AAF1C0B002DD5C8 /* RequestManagers */,
+				0197F1A11AAF1C03002DD5C8 /* Interactors */,
 				0124EB4E1AAE51FD00F90717 /* AppDelegate.h */,
 				0124EB4F1AAE51FD00F90717 /* AppDelegate.m */,
 				0124EB541AAE51FD00F90717 /* ViewController.h */,
@@ -113,6 +132,7 @@
 		0124EB661AAE51FD00F90717 /* GifyAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				0197F1A61AAF1C2E002DD5C8 /* Interactors */,
 				0124EB691AAE51FD00F90717 /* GifyAppTests.m */,
 				0124EB671AAE51FD00F90717 /* Supporting Files */,
 			);
@@ -125,6 +145,57 @@
 				0124EB681AAE51FD00F90717 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0197F1A11AAF1C03002DD5C8 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				0197F1A31AAF1C27002DD5C8 /* SearchGifInteractor.h */,
+				0197F1A41AAF1C27002DD5C8 /* SearchGifInteractor.m */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
+		0197F1A21AAF1C0B002DD5C8 /* RequestManagers */ = {
+			isa = PBXGroup;
+			children = (
+				016DE86D1AAF32880008F00C /* RequestManager.h */,
+			);
+			name = RequestManagers;
+			sourceTree = "<group>";
+		};
+		0197F1A61AAF1C2E002DD5C8 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				0197F1A71AAF1C4A002DD5C8 /* SearchGifInteractorTests.m */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
+		0197F1A91AAF1D73002DD5C8 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				0197F1AA1AAF1E13002DD5C8 /* GifProvider.h */,
+				0197F1AB1AAF1E13002DD5C8 /* GifProvider.m */,
+			);
+			name = Provider;
+			sourceTree = "<group>";
+		};
+		2D057F07888FCB3CF97040FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE25FBC2A2AD8D2A61DEE3B0 /* Pods-GifyAppTests.debug.xcconfig */,
+				B5D6838DE4C8C4045234515F /* Pods-GifyAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		52687E4D33F392963DBAFCF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6381E31BC8B74E11D0785A9A /* libPods-GifyAppTests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0124EB701AAE51FD00F90717 /* Build configuration list for PBXNativeTarget "GifyAppTests" */;
 			buildPhases = (
+				F4030A02D359DAE7F7A7260E /* Check Pods Manifest.lock */,
 				0124EB5F1AAE51FD00F90717 /* Sources */,
 				0124EB601AAE51FD00F90717 /* Frameworks */,
 				0124EB611AAE51FD00F90717 /* Resources */,
+				3309E44F011DC1B0B8C49C96 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,16 +295,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3309E44F011DC1B0B8C49C96 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GifyAppTests/Pods-GifyAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4030A02D359DAE7F7A7260E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0124EB431AAE51FD00F90717 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0124EB751AAE528200F90717 /* CoreDataStack.m in Sources */,
+				0197F1A51AAF1C27002DD5C8 /* SearchGifInteractor.m in Sources */,
 				0124EB531AAE51FD00F90717 /* GifyApp.xcdatamodeld in Sources */,
 				0124EB501AAE51FD00F90717 /* AppDelegate.m in Sources */,
 				0124EB561AAE51FD00F90717 /* ViewController.m in Sources */,
 				0124EB4D1AAE51FD00F90717 /* main.m in Sources */,
+				0197F1AC1AAF1E13002DD5C8 /* GifProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0124EB6A1AAE51FD00F90717 /* GifyAppTests.m in Sources */,
+				0197F1A81AAF1C4A002DD5C8 /* SearchGifInteractorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +480,7 @@
 		};
 		0124EB711AAE51FD00F90717 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE25FBC2A2AD8D2A61DEE3B0 /* Pods-GifyAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -390,6 +500,7 @@
 		};
 		0124EB721AAE51FD00F90717 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5D6838DE4C8C4045234515F /* Pods-GifyAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -422,6 +533,7 @@
 				0124EB6F1AAE51FD00F90717 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0124EB701AAE51FD00F90717 /* Build configuration list for PBXNativeTarget "GifyAppTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +542,7 @@
 				0124EB721AAE51FD00F90717 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

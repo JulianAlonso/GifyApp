@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DA7E512C-A8CF-4A89-A06F-684439D95694</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GifyApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>086FC20B3A11804A2BC9D064E6BD7526DBB79315</key>
+		<string>https://github.com/JulianAlonso/GifyApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GifyApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>086FC20B3A11804A2BC9D064E6BD7526DBB79315</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/JulianAlonso/GifyApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>086FC20B3A11804A2BC9D064E6BD7526DBB79315</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>086FC20B3A11804A2BC9D064E6BD7526DBB79315</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GifyApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

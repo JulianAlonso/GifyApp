@@ -1,5 +1,5 @@
 //
-//  SearchGifInteractor.h
+//  GifProvider.h
 //  GifyApp
 //
 //  Created by Julian Alonso on 10/3/15.
@@ -7,12 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RequestManager.h"
 
-@class GifProvider;
+@interface GifProvider : NSObject
 
-@interface SearchGifInteractor : NSObject
-
-@property (nonatomic, strong) GifProvider *gifProvider;
+@property (nonatomic, strong) id<RequestManager> requestManager;
 
 - (NSArray *)searchGifWithWords:(NSArray *)words;
 
