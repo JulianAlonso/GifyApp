@@ -1,5 +1,5 @@
 //
-//  GifParser.h
+//  PathHelper.h
 //  GifyApp
 //
 //  Created by Julian Alonso on 10/3/15.
@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GifParser : NSObject
+@interface PathHelper : NSObject
 
-+ (NSArray *)parseGifsFromArray:(NSArray *)gifsData;
+- (NSString *)gifDocumentsBasePath;
 
 @end

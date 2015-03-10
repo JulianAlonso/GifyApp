@@ -8,6 +8,7 @@
 
 #import "GifProvider.h"
 #import "GifAPIClientRequestManager.h"
+#import "GifParser.h"
 
 @implementation GifProvider
 
@@ -22,11 +23,9 @@
         
         if (!error)
         {
-            __unused NSArray *gifsData = dataDictionary[@"data"];
-            
-            //Parse data
-            //NSArray *parsedGifs = [GifParse parseGifs:gifsData];
+            parsedGifs = [GifParser parseGifsFromArray:dataDictionary[@"data"]];
         }
+        
         completionBlock(parsedGifs);
     }];
 }

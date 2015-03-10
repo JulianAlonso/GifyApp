@@ -7,7 +7,25 @@
 //
 
 #import "GifParser.h"
+#import "Gify.h"
 
 @implementation GifParser
+
++ (NSArray *)parseGifsFromArray:(NSArray *)gifsData
+{
+    NSMutableArray *gifs = [NSMutableArray array];
+    for (NSDictionary *gifData in gifsData)
+    {
+        Gify *gify = [[Gify alloc] init];
+        
+        gify.url = [gifData valueForKeyPath: @"images.original.url"];
+        gify.width = [gifData valueForKeyPath: @"images.original.width"];
+        gify.height = [gifData valueForKeyPath: @"images.original.height"];
+        gify.pageUrl = [gifData valueForKey: @"url"];
+        
+        [gifs addObject:gify];
+    }
+    return gifs;
+}
 
 @end
