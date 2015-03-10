@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		010FF3FE1AAF44510050616B /* GifAPIClientRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 010FF3FD1AAF44510050616B /* GifAPIClientRequestManager.m */; };
+		010FF4021AAF45980050616B /* URLMakerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 010FF4011AAF45980050616B /* URLMakerHelper.m */; };
+		010FF4051AAF47A60050616B /* ParamsMakerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 010FF4041AAF47A60050616B /* ParamsMakerHelper.m */; };
+		010FF4081AAF4DFD0050616B /* ApiConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 010FF4071AAF4DFD0050616B /* ApiConstants.m */; };
 		0124EB4D1AAE51FD00F90717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0124EB4C1AAE51FD00F90717 /* main.m */; };
 		0124EB501AAE51FD00F90717 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0124EB4F1AAE51FD00F90717 /* AppDelegate.m */; };
 		0124EB531AAE51FD00F90717 /* GifyApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0124EB511AAE51FD00F90717 /* GifyApp.xcdatamodeld */; };
@@ -32,9 +35,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		010FF3FB1AAF39CF0050616B /* ApiConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiConstants.h; sourceTree = "<group>"; };
 		010FF3FC1AAF44510050616B /* GifAPIClientRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GifAPIClientRequestManager.h; path = RequestManagers/GifAPIClientRequestManager.h; sourceTree = "<group>"; };
 		010FF3FD1AAF44510050616B /* GifAPIClientRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GifAPIClientRequestManager.m; path = RequestManagers/GifAPIClientRequestManager.m; sourceTree = "<group>"; };
+		010FF4001AAF45980050616B /* URLMakerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = URLMakerHelper.h; path = Helpers/URLMakerHelper.h; sourceTree = "<group>"; };
+		010FF4011AAF45980050616B /* URLMakerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = URLMakerHelper.m; path = Helpers/URLMakerHelper.m; sourceTree = "<group>"; };
+		010FF4031AAF47A60050616B /* ParamsMakerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParamsMakerHelper.h; path = Helpers/ParamsMakerHelper.h; sourceTree = "<group>"; };
+		010FF4041AAF47A60050616B /* ParamsMakerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParamsMakerHelper.m; path = Helpers/ParamsMakerHelper.m; sourceTree = "<group>"; };
+		010FF4061AAF4DFD0050616B /* ApiConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiConstants.h; path = Master/ApiConstants.h; sourceTree = "<group>"; };
+		010FF4071AAF4DFD0050616B /* ApiConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApiConstants.m; path = Master/ApiConstants.m; sourceTree = "<group>"; };
 		0124EB471AAE51FD00F90717 /* GifyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0124EB4B1AAE51FD00F90717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0124EB4C1AAE51FD00F90717 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -82,9 +90,21 @@
 		010FF3F91AAF37160050616B /* Master */ = {
 			isa = PBXGroup;
 			children = (
-				010FF3FB1AAF39CF0050616B /* ApiConstants.h */,
+				010FF4061AAF4DFD0050616B /* ApiConstants.h */,
+				010FF4071AAF4DFD0050616B /* ApiConstants.m */,
 			);
 			name = Master;
+			sourceTree = "<group>";
+		};
+		010FF3FF1AAF457B0050616B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				010FF4001AAF45980050616B /* URLMakerHelper.h */,
+				010FF4011AAF45980050616B /* URLMakerHelper.m */,
+				010FF4031AAF47A60050616B /* ParamsMakerHelper.h */,
+				010FF4041AAF47A60050616B /* ParamsMakerHelper.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		0124EB3E1AAE51FD00F90717 = {
@@ -114,6 +134,7 @@
 				0197F1A91AAF1D73002DD5C8 /* Provider */,
 				0197F1A21AAF1C0B002DD5C8 /* RequestManagers */,
 				0197F1A11AAF1C03002DD5C8 /* Interactors */,
+				010FF3FF1AAF457B0050616B /* Helpers */,
 				0124EB4E1AAE51FD00F90717 /* AppDelegate.h */,
 				0124EB4F1AAE51FD00F90717 /* AppDelegate.m */,
 				0124EB541AAE51FD00F90717 /* ViewController.h */,
@@ -309,13 +330,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0124EB751AAE528200F90717 /* CoreDataStack.m in Sources */,
+				010FF4021AAF45980050616B /* URLMakerHelper.m in Sources */,
 				0197F1A51AAF1C27002DD5C8 /* SearchGifInteractor.m in Sources */,
 				010FF3FE1AAF44510050616B /* GifAPIClientRequestManager.m in Sources */,
 				0124EB531AAE51FD00F90717 /* GifyApp.xcdatamodeld in Sources */,
 				0124EB501AAE51FD00F90717 /* AppDelegate.m in Sources */,
 				0124EB561AAE51FD00F90717 /* ViewController.m in Sources */,
 				0124EB4D1AAE51FD00F90717 /* main.m in Sources */,
+				010FF4051AAF47A60050616B /* ParamsMakerHelper.m in Sources */,
 				0197F1AC1AAF1E13002DD5C8 /* GifProvider.m in Sources */,
+				010FF4081AAF4DFD0050616B /* ApiConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
