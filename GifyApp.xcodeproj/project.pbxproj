@@ -33,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010FF3FB1AAF39CF0050616B /* ApiConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiConstants.h; sourceTree = "<group>"; };
 		0124EB471AAE51FD00F90717 /* GifyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0124EB4B1AAE51FD00F90717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0124EB4C1AAE51FD00F90717 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010FF3F91AAF37160050616B /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				010FF3FB1AAF39CF0050616B /* ApiConstants.h */,
+			);
+			name = Master;
+			sourceTree = "<group>";
+		};
 		0124EB3E1AAE51FD00F90717 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +111,7 @@
 		0124EB491AAE51FD00F90717 /* GifyApp */ = {
 			isa = PBXGroup;
 			children = (
+				010FF3F91AAF37160050616B /* Master */,
 				0197F1A91AAF1D73002DD5C8 /* Provider */,
 				0197F1A21AAF1C0B002DD5C8 /* RequestManagers */,
 				0197F1A11AAF1C03002DD5C8 /* Interactors */,
