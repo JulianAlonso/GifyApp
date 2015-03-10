@@ -10,4 +10,6 @@
 
 @protocol RequestManager <NSObject>
 
+- (void)searchGifWithWords:(NSArray *)words completionBlock:(void(^)(NSData *data))completionBlock;
+
 @end

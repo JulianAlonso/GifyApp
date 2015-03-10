@@ -13,6 +13,6 @@
 
 @property (nonatomic, strong) id<RequestManager> requestManager;
 
-- (NSArray *)searchGifWithWords:(NSArray *)words;
+- (void)searchGifWithWords:(NSArray *)words completionBlock:(void (^)(NSArray *results))completionBlock;
 
 @end

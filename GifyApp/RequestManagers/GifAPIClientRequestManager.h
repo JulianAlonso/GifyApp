@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RequestManager.h"
 
-@interface GifAPIClientRequestManager : NSObject
+@interface GifAPIClientRequestManager : NSObject <RequestManager>
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010FF3FE1AAF44510050616B /* GifAPIClientRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 010FF3FD1AAF44510050616B /* GifAPIClientRequestManager.m */; };
 		0124EB4D1AAE51FD00F90717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0124EB4C1AAE51FD00F90717 /* main.m */; };
 		0124EB501AAE51FD00F90717 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0124EB4F1AAE51FD00F90717 /* AppDelegate.m */; };
 		0124EB531AAE51FD00F90717 /* GifyApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0124EB511AAE51FD00F90717 /* GifyApp.xcdatamodeld */; };
@@ -17,9 +18,7 @@
 		0124EB6A1AAE51FD00F90717 /* GifyAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0124EB691AAE51FD00F90717 /* GifyAppTests.m */; };
 		0124EB751AAE528200F90717 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0124EB741AAE528200F90717 /* CoreDataStack.m */; };
 		0197F1A51AAF1C27002DD5C8 /* SearchGifInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0197F1A41AAF1C27002DD5C8 /* SearchGifInteractor.m */; };
-		0197F1A81AAF1C4A002DD5C8 /* SearchGifInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0197F1A71AAF1C4A002DD5C8 /* SearchGifInteractorTests.m */; };
 		0197F1AC1AAF1E13002DD5C8 /* GifProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0197F1AB1AAF1E13002DD5C8 /* GifProvider.m */; };
-		A5816B7D206D90478A35590D /* libPods-GifyAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6381E31BC8B74E11D0785A9A /* libPods-GifyAppTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		010FF3FB1AAF39CF0050616B /* ApiConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiConstants.h; sourceTree = "<group>"; };
+		010FF3FC1AAF44510050616B /* GifAPIClientRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GifAPIClientRequestManager.h; path = RequestManagers/GifAPIClientRequestManager.h; sourceTree = "<group>"; };
+		010FF3FD1AAF44510050616B /* GifAPIClientRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GifAPIClientRequestManager.m; path = RequestManagers/GifAPIClientRequestManager.m; sourceTree = "<group>"; };
 		0124EB471AAE51FD00F90717 /* GifyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0124EB4B1AAE51FD00F90717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0124EB4C1AAE51FD00F90717 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 		0197F1A71AAF1C4A002DD5C8 /* SearchGifInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchGifInteractorTests.m; path = Interactors/SearchGifInteractorTests.m; sourceTree = "<group>"; };
 		0197F1AA1AAF1E13002DD5C8 /* GifProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GifProvider.h; path = Providers/GifProvider.h; sourceTree = "<group>"; };
 		0197F1AB1AAF1E13002DD5C8 /* GifProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GifProvider.m; path = Providers/GifProvider.m; sourceTree = "<group>"; };
-		6381E31BC8B74E11D0785A9A /* libPods-GifyAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GifyAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D6838DE4C8C4045234515F /* Pods-GifyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifyAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GifyAppTests/Pods-GifyAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		DE25FBC2A2AD8D2A61DEE3B0 /* Pods-GifyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifyAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GifyAppTests/Pods-GifyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,7 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5816B7D206D90478A35590D /* libPods-GifyAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				016DE86D1AAF32880008F00C /* RequestManager.h */,
+				010FF3FC1AAF44510050616B /* GifAPIClientRequestManager.h */,
+				010FF3FD1AAF44510050616B /* GifAPIClientRequestManager.m */,
 			);
 			name = RequestManagers;
 			sourceTree = "<group>";
@@ -203,7 +204,6 @@
 		52687E4D33F392963DBAFCF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6381E31BC8B74E11D0785A9A /* libPods-GifyAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -232,11 +232,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0124EB701AAE51FD00F90717 /* Build configuration list for PBXNativeTarget "GifyAppTests" */;
 			buildPhases = (
-				F4030A02D359DAE7F7A7260E /* Check Pods Manifest.lock */,
 				0124EB5F1AAE51FD00F90717 /* Sources */,
 				0124EB601AAE51FD00F90717 /* Frameworks */,
 				0124EB611AAE51FD00F90717 /* Resources */,
-				3309E44F011DC1B0B8C49C96 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -305,39 +303,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3309E44F011DC1B0B8C49C96 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GifyAppTests/Pods-GifyAppTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F4030A02D359DAE7F7A7260E /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		0124EB431AAE51FD00F90717 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -345,6 +310,7 @@
 			files = (
 				0124EB751AAE528200F90717 /* CoreDataStack.m in Sources */,
 				0197F1A51AAF1C27002DD5C8 /* SearchGifInteractor.m in Sources */,
+				010FF3FE1AAF44510050616B /* GifAPIClientRequestManager.m in Sources */,
 				0124EB531AAE51FD00F90717 /* GifyApp.xcdatamodeld in Sources */,
 				0124EB501AAE51FD00F90717 /* AppDelegate.m in Sources */,
 				0124EB561AAE51FD00F90717 /* ViewController.m in Sources */,
@@ -358,7 +324,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0124EB6A1AAE51FD00F90717 /* GifyAppTests.m in Sources */,
-				0197F1A81AAF1C4A002DD5C8 /* SearchGifInteractorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +455,6 @@
 		};
 		0124EB711AAE51FD00F90717 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE25FBC2A2AD8D2A61DEE3B0 /* Pods-GifyAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -510,7 +474,6 @@
 		};
 		0124EB721AAE51FD00F90717 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5D6838DE4C8C4045234515F /* Pods-GifyAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

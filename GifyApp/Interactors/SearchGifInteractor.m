@@ -11,16 +11,18 @@
 
 @implementation SearchGifInteractor
 
-- (NSArray *)searchGifWithWords:(NSArray *)words
+- (void)searchGifWithWords:(NSArray *)words completionBlock:(void(^)(NSArray *))completionBlock
 {
-    NSArray *results = [NSArray array];
-    
     if (words)
     {
-        results = [self.gifProvider searchGifWithWords:words];
+        [self.gifProvider searchGifWithWords:words completionBlock:^(NSArray *results) {
+            completionBlock(results);
+        }];
     }
-    
-    return results;
+    else
+    {
+        completionBlock([NSArray array]);
+    }
 }
 
 #pragma mark - Lazy getters.

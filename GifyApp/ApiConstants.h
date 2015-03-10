@@ -9,6 +9,14 @@
 #ifndef GifyApp_ApiConstants_h
 #define GifyApp_ApiConstants_h
 
-#define kUrlApiBase = @""
+//Api key public to develop.
+#define kApiKey = @"dc6zaTOxFJmzC"
+
+//API base path
+#define kApiBasePath = @"http://api.giphy.com"
+
+//API paths
+#define kSearchPath = @"/v1/gifs/search"
+#define kSingleGifPath = @"/v1/gifs/"
 
 #endif

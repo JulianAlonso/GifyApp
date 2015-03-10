@@ -10,4 +10,9 @@
 
 @implementation GifAPIClientRequestManager
 
+- (void)searchGifWithWords:(NSArray *)words completionBlock:(void (^)(NSData *))completionBlock
+{
+    
+}
+
 @end

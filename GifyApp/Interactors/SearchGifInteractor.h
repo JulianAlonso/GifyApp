@@ -14,6 +14,6 @@
 
 @property (nonatomic, strong) GifProvider *gifProvider;
 
-- (NSArray *)searchGifWithWords:(NSArray *)words;
+- (void)searchGifWithWords:(NSArray *)words completionBlock:(void(^)(NSArray *))completionBlock;
 
 @end

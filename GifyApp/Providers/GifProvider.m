@@ -10,9 +10,24 @@
 
 @implementation GifProvider
 
-- (NSArray *)searchGifWithWords:(NSArray *)words
+- (void)searchGifWithWords:(NSArray *)words completionBlock:(void(^)(NSArray *results))completionBlock
 {
-    return nil;
+    [self.requestManager searchGifWithWords:words completionBlock:^(NSData *data) {
+        //Parse data
+        NSError *error;
+        NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+        
+        NSArray *parsedGifs = [NSArray array];
+        
+        if (!error)
+        {
+            __unused NSArray *gifsData = dataDictionary[@"data"];
+            
+            //Parse data
+            //NSArray *parsedGifs = [GifParse parseGifs:gifsData];
+        }
+        completionBlock(parsedGifs);
+    }];
 }
 
 @end
