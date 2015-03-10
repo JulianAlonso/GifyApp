@@ -8,6 +8,7 @@
 
 #import "GifParser.h"
 #import "Gify.h"
+#import "PathHelper.h"
 
 @implementation GifParser
 
@@ -22,6 +23,7 @@
         gify.width = [gifData valueForKeyPath: @"images.original.width"];
         gify.height = [gifData valueForKeyPath: @"images.original.height"];
         gify.pageUrl = [gifData valueForKey: @"url"];
+        gify.localPath = [[PathHelper gifDocumentsBasePath] stringByAppendingString:gify.url];
         
         [gifs addObject:gify];
     }

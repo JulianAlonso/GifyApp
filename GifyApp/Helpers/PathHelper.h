@@ -10,6 +10,6 @@
 
 @interface PathHelper : NSObject
 
-- (NSString *)gifDocumentsBasePath;
++ (NSString *)gifDocumentsBasePath;
 
 @end

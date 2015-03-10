@@ -16,6 +16,6 @@
 @property (nonatomic, retain) NSNumber * width;
 @property (nonatomic, retain) NSNumber * height;
 @property (nonatomic, retain) NSString * pageUrl;
-@property (nonatomic, retain) NSNumber * localPath;
+@property (nonatomic, retain) NSString * localPath;
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation PathHelper
 
-- (NSString *)gifDocumentsBasePath
++ (NSString *)gifDocumentsBasePath
 {
     NSString *documentsBasePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
     
