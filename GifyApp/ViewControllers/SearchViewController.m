@@ -9,6 +9,8 @@
 #import "SearchViewController.h"
 #import "SearchGifInteractor.h"
 #import "DefaultSearchViewDelegate.h"
+#import "ViewConstants.h"
+#import "SearchTableViewCell.h"
 
 @interface SearchViewController ()
 
@@ -42,6 +44,10 @@
     self.searchTableView.delegate = self.delegate;
     self.searchTableView.dataSource = self.delegate;
     self.searchBar.delegate = self.delegate;
+    
+    self.delegate.searchTableView = self.searchTableView;
+    
+    [self.searchTableView registerNib:[UINib nibWithNibName:NSStringFromClass([SearchTableViewCell class]) bundle:nil] forCellReuseIdentifier:kSearchTableViewCellIdentifier];
 }
 
 #pragma mark - Lazy getters.

@@ -10,4 +10,6 @@
 
 @protocol SearchViewDelegate <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
 
+@property (nonatomic, weak) UITableView *searchTableView;
+
 @end
