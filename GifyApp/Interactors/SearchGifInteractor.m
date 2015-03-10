@@ -11,7 +11,7 @@
 
 @implementation SearchGifInteractor
 
-- (void)searchGifWithWords:(NSArray *)words completionBlock:(void(^)(NSArray *))completionBlock
+- (void)searchGifWithWords:(NSArray *)words completionBlock:(void(^)(NSArray *gifs))completionBlock
 {
     if (words)
     {

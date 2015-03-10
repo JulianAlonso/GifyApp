@@ -10,12 +10,12 @@
 
 @implementation URLMakerHelper
 
-- (NSURL *)urlWithBasepath:(NSString *)basePath endPoint:(NSString *)endPoint andParams:(NSDictionary *)params
++ (NSURL *)urlWithBasepath:(NSString *)basePath endPoint:(NSString *)endPoint andParams:(NSDictionary *)params
 {
     NSMutableString *url = [NSMutableString string];
     
     [url appendString:basePath];
-    [url stringByAppendingPathComponent:endPoint];
+    [url appendString:endPoint];
     
     [url appendString:@"?"];
     

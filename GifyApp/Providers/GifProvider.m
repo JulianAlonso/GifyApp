@@ -7,6 +7,7 @@
 //
 
 #import "GifProvider.h"
+#import "GifAPIClientRequestManager.h"
 
 @implementation GifProvider
 
@@ -28,6 +29,15 @@
         }
         completionBlock(parsedGifs);
     }];
+}
+
+- (id<RequestManager>)requestManager
+{
+    if (!_requestManager)
+    {
+        _requestManager = [[GifAPIClientRequestManager alloc] init];
+    }
+    return _requestManager;
 }
 
 @end
